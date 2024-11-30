@@ -1,0 +1,7 @@
+-   id: branch-name-validator-hook
+    name: Branch Name Validator Hook
+    description: Ensure branches have given names or match a pattern.
+    entry: branch-name-validator-hook
+    language: python
+    always_run: true
+    stages: [pre-commit, pre-merge-commit, pre-push, manual]
