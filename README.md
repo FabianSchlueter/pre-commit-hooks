@@ -14,8 +14,8 @@ This example allows commits to the branch named _test_ and to branches whose nam
 
 ```
 repos:
--   repo: 
-    rev: 
+-   repo: https://github.com/FabianSchlueter/pre-commit-hooks
+    rev: v1.0.0 # Use the ref you want to point at
     hooks:
     -   id: branch-name-validator-hook
         args:
