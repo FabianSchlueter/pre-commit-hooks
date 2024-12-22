@@ -5,3 +5,10 @@
     language: python
     always_run: true
     stages: [pre-commit, pre-merge-commit, pre-push, manual]
+-   id: python-docstring-checker
+    name: Python Docstring Checker Hook
+    description: Check custom Python functions for docstrings.
+    entry: docstring-checker
+    language: python
+    always_run: true
+    stages: [pre-commit, pre-merge-commit, pre-push, manual]

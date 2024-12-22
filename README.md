@@ -27,3 +27,18 @@ repos:
           - ^fix.*$
         pass_filenames: false
 ```
+
+`python-docstring-checker`
+
+Check for docstrings in custom Python function definitions.
+
+This example checks in all Python files whose name contains the string _test_ if there are any function definitions with a missing docstring. For checking all Python files leave out the _files_ operator
+
+```
+repos:
+-   repo: https://github.com/FabianSchlueter/pre-commit-hooks
+    rev: v1.2.0 # Use the ref you want to point at
+    hooks:
+    -   id: docstring-checker
+        files: test
+```
